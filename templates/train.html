@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+
+    <link href="../static/styles.css" rel="stylesheet">
+    <link href="https://cdn.icon-icons.com/icons2/2248/PNG/512/syllabary_hangul_icon_138127.png" rel="icon">
+
+    <title>Hangul trainer: training</title>
+    <script src="../static/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="bg-light border navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"></span><span class="green">Hangul trainer</span></a>
+            <div id="navbar">
+                <ul class="navbar-nav me-auto mt-2">
+                    <li class="nav-item"><a class="nav-link" href="train.html">Practise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://hangul.fun" target="_blank">Source of text</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container-fluid py-5 text-center">
+        <section id="sec1">
+            <h3>Choose rows to practise</h3>
+            <h6>Click on a letter to play its pronunciation!</h6>
+            <table style="background-color: rgba(192, 192, 192, 0.2)" class="table table-hover">
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" id="row1" value="ㅏㅑㅓㅕ"></td>
+                        <td>
+                            <div id="a" class="main">ㅏ</div>
+                            <div>a</div>
+                        </td>
+                        <td>
+                            <div id="ya" class="main">ㅑ</div>
+                            <div>ya</div>
+                        </td>
+                        <td>
+                            <div id="eo" class="main">ㅓ</div>
+                            <div>o</div>
+                        </td>
+                        <td>
+                            <div id="yeo" class="main">ㅕ</div>
+                            <div>yo</div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="row2" value="ㅗㅛㅜㅠ"></td>
+                        <td>
+                            <div id="o" class="main">ㅗ</div>
+                            <div>o</div>
+                        </td>
+                        <td>
+                            <div id="yo" class="main">ㅛ</div>
+                            <div>yo</div>
+                        </td>
+                        <td>
+                            <div id="u" class="main">ㅜ</div>
+                            <div>u</div>
+                        </td>
+                        <td>
+                            <div id="yu" class="main">ㅠ</div>
+                            <div>yu</div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="row3" value="ㅡㅣ"></td>
+                        <td></td>
+                        <td>
+                            <div id="eu" class="main">ㅡ</div>
+                            <div>eu</div>
+                        </td>
+                        <td>
+                            <div id="i" class="main">ㅣ</div>
+                            <div>i</div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="row4" value="ㅐㅒㅔㅖ"></td>
+                        <td>
+                            <div id="ae" class="main">ㅐ</div>
+                            <div>e</div>
+                        </td>
+                        <td>
+                            <div id="yae" class="main">ㅒ</div>
+                            <div>ye</div>
+                        </td>
+                        <td>
+                            <div id="e" class="main">ㅔ</div>
+                            <div>e</div>
+                        </td>
+                        <td>
+                            <div id="ye" class="main">ㅖ</div>
+                            <div>ye</div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="row5" value="ㅘㅙㅚ"></td>
+                        <td>
+                            <div id="wa" class="main">ㅘ</div>
+                            <div>wa</div>
+                        </td>
+                        <td>
+                            <div id="wae" class="main">ㅙ</div>
+                            <div>we</div>
+                        </td>
+                        <td>
+                            <div id="oe" class="main">ㅚ</div>
+                            <div>we</div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="row6" value="ㅝㅞㅟㅢ"></td>
+                        <td>
+                            <div id="wo" class="main">ㅝ</div>
+                            <div>wo</div>
+                        </td>
+                        <td>
+                            <div id="we" class="main">ㅞ</div>
+                            <div>we</div>
+                        </td>
+                        <td>
+                            <div id="wi" class="main">ㅟ</div>
+                            <div>wi</div>
+                        </td>
+                        <td>
+                            <div id="ui" class="main">ㅢ</div>
+                            <div>ui</div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="row7" value="ㄱㄴㄷㄹ"></td>
+                        <td>
+                            <div id="g" class="main">ㄱ</div>
+                            <div>k</div>
+                        </td>
+                        <td>
+                            <div id="n" class="main">ㄴ</div>
+                            <div>n</div>
+                        </td>
+                        <td>
+                            <div id="d" class="main">ㄷ</div>
+                            <div>t</div>
+                        </td>
+                        <td>
+                            <div id="l" class="main">ㄹ</div>
+                            <div>r</div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="row8" value="ㅁㅂㅅㅇ"></td>
+                        <td>
+                            <div id="m" class="main">ㅁ</div>
+                            <div>m</div>
+                        </td>
+                        <td>
+                            <div id="b" class="main">ㅂ</div>
+                            <div>p</div>
+                        </td>
+                        <td>
+                            <div id="s" class="main">ㅅ</div>
+                            <div>s</div>
+                        </td>
+                        <td>
+                            <div class="main">ㅇ</div>
+                            <div>ng</div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="row9" value="ㅈㅊ"></td>
+                        <td></td>
+                        <td>
+                            <div id="j" class="main">ㅈ</div>
+                            <div>j</div>
+                        </td>
+                        <td>
+                            <div id="ch" class="main">ㅊ</div>
+                            <div>ch</div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="row10" value="ㅋㅌㅍㅎ"></td>
+                        <td>
+                            <div id="k" class="main">ㅋ</div>
+                            <div>kh</div>
+                        </td>
+                        <td>
+                            <div id="t" class="main">ㅌ</div>
+                            <div>th</div>
+                        </td>
+                        <td>
+                            <div id="p" class="main">ㅍ</div>
+                            <div>ph</div>
+                        </td>
+                        <td>
+                            <div id="h" class="main">ㅎ</div>
+                            <div>h</div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="row11" value="ㄲㄸㅃㅆㅉ"></td>
+                        <td>
+                            <div id="kk" class="main">ㄲ</div>
+                            <div>kk</div>
+                        </td>
+                        <td>
+                            <div id="tt" class="main">ㄸ</div>
+                            <div>tt</div>
+                        </td>
+                        <td>
+                            <div id="pp" class="main">ㅃ</div>
+                            <div>pp</div>
+                        </td>
+                        <td>
+                            <div id="ss" class="main">ㅆ</div>
+                            <div>ss</div>
+                        </td>
+                        <td>
+                            <div id="jj" id="test" class="main">ㅉ</div>
+                            <div>jj</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <button id="train" class="btn btn-success" type="submit">Train!</button>
+                <button id="check_all" class="btn btn-success">Check all</button>
+                <button id="uncheck_all" class="btn btn-success">Uncheck all</button>
+            </div>
+        </section>
+        <section id="sec2" style="display: none">
+            <div>
+                <div style="font-size: xx-large" id="koreanlet" class="main">A</div>
+                <div style="font-size: x-large" id="englet" style="display: none">a</div>
+            </div>
+            <input id="answer" onblur="this.focus()" type="text" autocomplete="off" placeholder="Pronunciation" autofocus style="font-size:x-large">
+            <button class="btn btn-success" id="back" style="font-size: x-large; margin-bottom: 7px;">Back to select menu</button>
+            <p style="font-size: large">To see a hint click on a letter!</p>
+            <input name="highscore" id="highscore" type="hidden">
+            <p id="score"></p>
+        </section>
+        <script name="training" src="../static/training.js"></script>
+
+        <script name="check/uncheck" src="../static/check-uncheck.js"></script>
+
+        <script name="audio" src="../static/audio.js"></script>
+    </main>
+</body>
+
+</html>
