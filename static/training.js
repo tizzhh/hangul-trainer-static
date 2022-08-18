@@ -43,7 +43,7 @@ $(document).ready(function() {
             "ㅆ": "ss",
             "ㅉ": "jj"
         };
-
+        $("#englet").hide();
         $("#sec1").hide();
         $("#sec2").show();
         var checkboxes = $('input[type="checkbox"]');
