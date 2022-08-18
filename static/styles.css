@@ -40,15 +40,3 @@ table td {
     font-size: small;
     color: grey;
 }
-
-.center {
-    overflow: hidden;
-    position: absolute;
-    z-index: 10;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-}
