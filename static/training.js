@@ -67,7 +67,7 @@ $(document).ready(function() {
         var score = 0;
 
         $("#answer").on('input', function() {
-            if (letters[$("#koreanlet").html()] == $("#answer").val()) {
+            if (letters[$("#koreanlet").html()] == $("#answer").val().toLowerCase()) {
                 $("#englet").hide();
                 score += 1;
                 $("#score").html("Score: " + score);
