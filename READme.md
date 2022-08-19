@@ -19,5 +19,6 @@ git clone https://github.com/tizzhh/hangul-trainer-static
 Open the folder with cmd/text-edit/ide/whatever
 type in the console:
 ```sh
-http-server or simply launch an html file
+http-server
 ```
+or simply launch an html file
